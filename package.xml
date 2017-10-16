@@ -16,7 +16,7 @@
   <email>jan@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-10-13</date>
+ <date>2017-10-16</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0alpha1</api>
@@ -74,7 +74,7 @@
    <file name="export.php" role="horde" />
    <file name="graphgen.php" role="horde" />
    <file name="index.php" role="horde" />
-   <file name="README" role="doc" />
+   <file name="README.rst" role="doc" />
    <file name="search.php" role="horde" />
    <file name="viewgraph.php" role="horde" />
   </dir> <!-- / -->
@@ -95,7 +95,7 @@
    <install as="operator/export.php" name="export.php" />
    <install as="operator/graphgen.php" name="graphgen.php" />
    <install as="operator/index.php" name="index.php" />
-   <install as="README" name="README" />
+   <install as="README.rst" name="README.rst" />
    <install as="operator/search.php" name="search.php" />
    <install as="operator/viewgraph.php" name="viewgraph.php" />
    <install as="operator/config/.htaccess" name="config/.htaccess" />
@@ -131,7 +131,7 @@
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2017-10-13</date>
+   <date>2017-10-16</date>
    <license uri="TODO">TODO</license>
    <notes>
 * Initial release.
