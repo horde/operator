@@ -16,7 +16,7 @@
   <email>jan@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-10-16</date>
+ <date>2017-10-17</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0alpha1</api>
@@ -70,10 +70,10 @@
      <file name="screen.css" role="horde" />
     </dir> <!-- /themes/default -->
    </dir> <!-- /themes -->
-   <file name="COPYING" role="doc" />
    <file name="export.php" role="horde" />
    <file name="graphgen.php" role="horde" />
    <file name="index.php" role="horde" />
+   <file name="LICENSE" role="doc" />
    <file name="README.rst" role="doc" />
    <file name="search.php" role="horde" />
    <file name="viewgraph.php" role="horde" />
@@ -91,13 +91,6 @@
  </dependencies>
  <phprelease>
   <filelist>
-   <install as="COPYING" name="COPYING" />
-   <install as="operator/export.php" name="export.php" />
-   <install as="operator/graphgen.php" name="graphgen.php" />
-   <install as="operator/index.php" name="index.php" />
-   <install as="README.rst" name="README.rst" />
-   <install as="operator/search.php" name="search.php" />
-   <install as="operator/viewgraph.php" name="viewgraph.php" />
    <install as="operator/config/.htaccess" name="config/.htaccess" />
    <install as="operator/config/conf.xml" name="config/conf.xml" />
    <install as="operator/config/prefs.php" name="config/prefs.php" />
@@ -105,20 +98,27 @@
    <install as="CREDITS" name="doc/CREDITS" />
    <install as="RELEASE_NOTES" name="doc/RELEASE_NOTES" />
    <install as="TODO" name="doc/TODO" />
+   <install as="operator/export.php" name="export.php" />
+   <install as="operator/graphgen.php" name="graphgen.php" />
+   <install as="operator/index.php" name="index.php" />
    <install as="operator/lib/.htaccess" name="lib/.htaccess" />
    <install as="operator/lib/api.php" name="lib/api.php" />
    <install as="operator/lib/Application.php" name="lib/Application.php" />
    <install as="operator/lib/Driver.php" name="lib/Driver.php" />
+   <install as="operator/lib/Driver/asterisksql.php" name="lib/Driver/asterisksql.php" />
    <install as="operator/lib/Exception.php" name="lib/Exception.php" />
+   <install as="operator/lib/Form/SearchCDR.php" name="lib/Form/SearchCDR.php" />
    <install as="operator/lib/Operator.php" name="lib/Operator.php" />
    <install as="operator/lib/version.php" name="lib/version.php" />
-   <install as="operator/lib/Driver/asterisksql.php" name="lib/Driver/asterisksql.php" />
-   <install as="operator/lib/Form/SearchCDR.php" name="lib/Form/SearchCDR.php" />
+   <install as="LICENSE" name="LICENSE" />
+   <install as="README.rst" name="README.rst" />
+   <install as="operator/search.php" name="search.php" />
    <install as="operator/templates/.htaccess" name="templates/.htaccess" />
    <install as="operator/templates/search.inc" name="templates/search.inc" />
-   <install as="operator/themes/default/screen.css" name="themes/default/screen.css" />
    <install as="operator/themes/default/graphics/graphs.png" name="themes/default/graphics/graphs.png" />
    <install as="operator/themes/default/graphics/operator.png" name="themes/default/graphics/operator.png" />
+   <install as="operator/themes/default/screen.css" name="themes/default/screen.css" />
+   <install as="operator/viewgraph.php" name="viewgraph.php" />
   </filelist>
  </phprelease>
  <changelog>
@@ -131,7 +131,7 @@
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2017-10-16</date>
+   <date>2017-10-17</date>
    <license uri="TODO">TODO</license>
    <notes>
 * Initial release.
