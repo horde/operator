@@ -3,7 +3,7 @@ id: operator
 name: Operator
 full: Call records viewer application
 description: TODO
-list:
+list: ~
 type: application
 authors:
   -
@@ -29,4 +29,6 @@ license:
   uri: TODO
 dependencies:
   required:
-    php: ^5.3
+    php: ^7
+    composer:
+      horde/horde: ^6
