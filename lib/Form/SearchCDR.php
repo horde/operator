@@ -13,7 +13,7 @@
 
 class SearchCDRForm extends Horde_Form {
 
-    public function __construct($title, &$vars)
+    public function __construct($title, $vars)
     {
         parent::__construct($vars, $title);
 
@@ -77,7 +77,7 @@ class SearchCDRForm extends Horde_Form {
 
 class GraphCDRForm extends SearchCDRForm
 {
-    public function __construct($title, &$vars)
+    public function __construct($title, $vars)
     {
         parent::__construct($title, $vars);
 
@@ -94,7 +94,7 @@ class GraphCDRForm extends SearchCDRForm
 
 class ExportCDRForm extends SearchCDRForm
 {
-    public function __construct($title, &$vars)
+    public function __construct($title, $vars)
     {
         parent::__construct($title, $vars);
 
