@@ -9,7 +9,6 @@
     identifier: TODO
     uri: TODO
   notes: |+
-    
 1.0.0alpha1:
   api: 1.0.0alpha1
   state:
@@ -21,3 +20,17 @@
     uri: TODO
   notes: |
     [rla] Package for H6 / composer installer. Initial release.
+1.0.0-alpha3:
+  api: 1.0.0-alpha3
+  state:
+    release: alpha
+    api: alpha
+  date: 2026-03-07
+  license:
+    identifier: TODO
+    uri: https://spdx.org/licenses/TODO.html
+  notes: |-
+    fix: Remove reference from signatures.
+    Mark as a H6 app.
+    Add CI job for satis repo update
+    Development mode for operator-1.0.0alpha3

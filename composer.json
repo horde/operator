@@ -1,5 +1,4 @@
 {
-    "minimum-stability": "dev",
     "name": "horde/operator",
     "description": "Call records viewer application",
     "type": "horde-application",
@@ -17,15 +16,10 @@
             "role": "lead"
         }
     ],
-    "time": "2021-07-04",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://horde-satis.maintaina.com/"
-        }
-    ],
+    "time": "2026-03-07",
+    "repositories": [],
     "require": {
-        "horde/horde-installer-plugin": "dev-FRAMEWORK_6_0 || *",
+        "horde/horde-installer-plugin": "dev-FRAMEWORK_6_0 || ^3 || ^2",
         "php": "^7",
         "horde/horde": "^6 || dev-FRAMEWORK_6_0"
     },
@@ -34,6 +28,17 @@
     "autoload": {
         "psr-0": {
             "Operator": "lib/"
+        }
+    },
+    "autoload-dev": {},
+    "config": {
+        "allow-plugins": {
+            "horde/horde-installer-plugin": true
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-FRAMEWORK_6_0": "1.x-dev"
         }
     }
 }

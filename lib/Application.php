@@ -37,7 +37,7 @@ class Operator_Application extends Horde_Registry_Application
 {
     /**
      */
-    public $version = 'H6 (1.0.0alpha2)';
+    public $version = '1.0.0-alpha3';
 
     /**
      * TODO
