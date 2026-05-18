@@ -32,4 +32,9 @@ dependencies:
     php: ^7
     composer:
       horde/horde: ^6
+autoload:
+  classmap:
+    - lib/
+  psr-4:
+    Horde\Operator\: /src
 vendor: horde
