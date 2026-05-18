@@ -84,9 +84,9 @@ class Operator_Driver_asterisksql extends Operator_Driver {
         }
 
         $filter[] = 'calldate >= ?';
-        $values[] = $start->strftime('%Y-%m-%d %T');
+        $values[] = $start->format('Y-m-d H:i:s');
         $filter[] = 'calldate < ?';
-        $values[] =  $end->strftime('%Y-%m-%d %T');
+        $values[] =  $end->format('Y-m-d H:i:s');
 
         // Filter by account code
         if ($accountcode !== null) {
@@ -216,9 +216,9 @@ class Operator_Driver_asterisksql extends Operator_Driver {
 
         // Filter by the date range (filled in below)
         $filter[] = 'calldate >= ?';
-        $values[] = $start->strftime('%Y-%m-%d %T');
+        $values[] = $start->format('Y-m-d H:i:s');
         $filter[] = 'calldate < ?';
-        $values[] = $end->strftime('%Y-%m-%d %T');
+        $values[] = $end->format('Y-m-d H:i:s');
 
         $filterstring = implode(' AND ', $filter);
 
@@ -274,7 +274,7 @@ class Operator_Driver_asterisksql extends Operator_Driver {
         $s_minutes = array();
         $s_failed = array();
         while($start->compareDate($end) <= 0) {
-            $index = $start->strftime('%Y-%m');
+            $index = $start->format('Y-m');
             $year = $start->year;
             $month = $start->month;
 
